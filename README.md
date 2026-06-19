@@ -1,7 +1,7 @@
-Velonetics HTTP Cache
+Pucora HTTP Cache
 ====
 
-A cached http client for the [Velonetics](github.com/velonetics/velonetics) framework
+A cached http client for the [Pucora](github.com/pucora/pucora) framework
 
 ## Using it
 
@@ -10,10 +10,10 @@ This package exposes two simple factories capable to create a instances of the `
 	import 	(
 		"context"
 		"net/http"
-		"github.com/velonetics/lura/v2/config"
-		"github.com/velonetics/lura/v2/proxy"
-		"github.com/velonetics/lura/v2/transport/http/client"
-		"github.com/velonetics/velonetics-httpcache/v2"
+		"github.com/pucora/lura/v2/config"
+		"github.com/pucora/lura/v2/proxy"
+		"github.com/pucora/lura/v2/transport/http/client"
+		"github.com/pucora/velonetics-httpcache/v2"
 	)
 
 	requestExecutorFactory := func(cfg *config.Backend) proxy.HTTPRequestExecutor {

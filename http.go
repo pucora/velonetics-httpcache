@@ -1,4 +1,4 @@
-// Package httpcache introduces an in-memory-cached http client into the Velonetics stack
+// Package httpcache introduces an in-memory-cached http client into the Pucora stack
 package httpcache
 
 import (
@@ -6,11 +6,11 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/velonetics/httpcache"
-	"github.com/velonetics/lru"
+	"github.com/pucora/httpcache"
+	"github.com/pucora/lru"
 
-	"github.com/velonetics/lura/v2/config"
-	"github.com/velonetics/lura/v2/transport/http/client"
+	"github.com/pucora/lura/v2/config"
+	"github.com/pucora/lura/v2/transport/http/client"
 )
 
 type Cache interface {
@@ -24,7 +24,7 @@ type Cache interface {
 }
 
 // Namespace is the key to use to store and access the custom config data
-const Namespace = "github.com/velonetics/velonetics-httpcache"
+const Namespace = "github.com/pucora/velonetics-httpcache"
 
 // NewHTTPClient creates a HTTPClientFactory using an in-memory-cached http client
 func NewHTTPClient(cfg *config.Backend, nextF client.HTTPClientFactory) client.HTTPClientFactory {

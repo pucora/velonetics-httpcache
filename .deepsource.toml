@@ -5,7 +5,7 @@ name = "go"
 enabled = true
 
   [analyzers.meta]
-  import_root = "github.com/velonetics/velonetics-httpcache/v2"
+  import_root = "github.com/pucora/velonetics-httpcache/v2"
 
 [[transformers]]
 name = "gofmt"

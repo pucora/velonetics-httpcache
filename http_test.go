@@ -12,11 +12,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/velonetics/httpcache"
-	"github.com/velonetics/lura/v2/config"
-	"github.com/velonetics/lura/v2/encoding"
-	"github.com/velonetics/lura/v2/proxy"
-	"github.com/velonetics/lura/v2/transport/http/client"
+	"github.com/pucora/httpcache"
+	"github.com/pucora/lura/v2/config"
+	"github.com/pucora/lura/v2/encoding"
+	"github.com/pucora/lura/v2/proxy"
+	"github.com/pucora/lura/v2/transport/http/client"
 )
 
 var maxRequests = 100
